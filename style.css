@@ -1,0 +1,55 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+}
+#form-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1f1f1f;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    margin-top: 150px;
+    max-width: 800px;
+}
+#repo-list {
+    list-style-type: none;
+    padding: 0;
+}
+.repo {
+    border: 1px solid #333;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #2b2b2b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+.repo:hover {
+    transform: translateY(-5px);
+}
+.repo h2 {
+    margin: 0 0 10px;
+}
+.repo p {
+    margin: 5px 0;
+}
+.repo a {
+    text-decoration: none;
+    color: #1e90ff;
+}
+.repo a:hover {
+    text-decoration: underline;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

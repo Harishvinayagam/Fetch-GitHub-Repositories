@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub User Repositories</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="form-container">
+        <div class="text-center">
+            <h1 class="my-4">Fetch GitHub User Repositories</h1>
+            <form id="user-form" class="mb-4">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="username" name="username" placeholder="Enter GitHub Username" required>
+                    <button type="submit" class="btn btn-primary">Get Repositories</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <div id="result">
+            <h2>Repositories:</h2>
+            <ul id="repo-list" class="list-group"></ul>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <script src="script.js">
+    </script>
+</body>
+</html>
